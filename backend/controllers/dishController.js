@@ -3,7 +3,7 @@ const Restaurant = require('../models/Restaurant');
 
 const createDish = async (req, res) => {
   try {
-    const { name, description, ingredients, flavor, weight, price } = req.body;
+    const { name, description, ingredients, flavor, weight, price,image } = req.body;
     const restaurantId = req.params.restaurantId;
 
     if (!name) {
@@ -22,6 +22,7 @@ const createDish = async (req, res) => {
       flavor,
       weight,
       price,
+      image,
       restaurant: restaurantId,
       createdBy: req.user._id
     });
