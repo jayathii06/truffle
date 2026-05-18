@@ -9,6 +9,8 @@ router.post('/', protect, (req, res, next) => {
       console.error('Multer error:', err);
       return res.status(500).json({ message: err.message });
     }
+    console.log('req.file:', req.file);   
+    console.log('req.body:', req.body); 
     next();
   });
 }, (req, res) => {
@@ -34,5 +36,6 @@ router.delete('/:public_id', protect, async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 });
+
 
 module.exports = router;

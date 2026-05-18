@@ -2,7 +2,7 @@ const Restaurant = require('../models/Restaurant');
 
 const createRestaurant = async (req, res) => {
   try {
-    const { name, description, cuisine, area, city } = req.body;
+    const { name, description, cuisine, area, city, image } = req.body;
 
     if (!name || !cuisine || !area || !city) {
       return res.status(400).json({ message: 'Please fill all required fields' });
@@ -14,6 +14,7 @@ const createRestaurant = async (req, res) => {
       cuisine,
       area,
       city,
+      image,
       createdBy: req.user._id
     });
 
