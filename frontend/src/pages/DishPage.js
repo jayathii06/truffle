@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import axios from '../utils/axios';
 import { useAuth } from '../context/AuthContext';
+import Toast from '../components/Toast';
 
 const DishPage = () => {
   const { id, dishId } = useParams();
@@ -17,6 +18,7 @@ const DishPage = () => {
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
+  const [toast, setToast] = useState(null);
 
   useEffect(() => {
     fetchDish();
@@ -54,6 +56,7 @@ const DishPage = () => {
     try {
       await axios.post(`/restaurants/${id}/dishes/${dishId}/reviews`, { rating, comment });
       setSuccess('Review posted! 🎉');
+      setToast({ message: 'Review posted successfully!', type: 'success' });
       setRating(0);
       setComment('');
       fetchReviews();
@@ -218,6 +221,13 @@ const DishPage = () => {
             </div>
           </div>
         </>
+      )}
+      {toast && (
+        <Toast
+          message={toast.message}
+          type={toast.type}
+          onClose={() => setToast(null)}
+        />
       )}
     </div>
   );

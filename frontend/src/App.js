@@ -9,6 +9,7 @@ import ProfilePage from './pages/ProfilePage';
 import BookmarksPage from './pages/BookmarksPage';
 import AddRestaurant from './pages/AddRestaurant';
 import AddDish from './pages/AddDish';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/bookmarks" element={<BookmarksPage />} />
           <Route path="/add-restaurant" element={<AddRestaurant />} />
           <Route path="/restaurants/:id/add-dish" element={<AddDish />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
     </AuthProvider>
