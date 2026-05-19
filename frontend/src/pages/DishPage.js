@@ -127,7 +127,7 @@ const DishPage = () => {
           </div>
 
           <div style={styles.container}>
-            <div style={styles.layout}>
+            <div className="dish-layout">
 
               <div style={styles.leftCol}>
                 <div style={styles.card}>
@@ -222,6 +222,7 @@ const DishPage = () => {
           </div>
         </>
       )}
+
       {toast && (
         <Toast
           message={toast.message}
@@ -269,7 +270,6 @@ const styles = {
     backdropFilter: 'blur(4px)'
   },
   container: { maxWidth: '1100px', margin: '0 auto', padding: '2rem' },
-  layout: { display: 'grid', gridTemplateColumns: '1fr 1.5fr', gap: '2rem' },
   leftCol: { display: 'flex', flexDirection: 'column', gap: '1.25rem' },
   rightCol: {},
   card: {
