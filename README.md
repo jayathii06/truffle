@@ -58,22 +58,6 @@ truffle/
 - **Dish** — name, ingredients, flavor, weight, price, image, restaurant, createdBy
 - **Review** — rating, comment, dish, user
 
-## 🚀 Run Locally
-
-### Backend
-\`\`\`bash
-cd backend
-npm install
-# Add .env file with MONGO_URI, JWT_SECRET, CLOUDINARY credentials
-npm run dev
-\`\`\`
-
-### Frontend
-\`\`\`bash
-cd frontend
-npm install
-npm start
-\`\`\`
 
 ## 👤 Author
 Jayathi Sree — [GitHub](https://github.com/jayathii06)
