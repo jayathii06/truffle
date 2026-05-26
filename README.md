@@ -3,7 +3,7 @@
 A full-stack community platform where users discover, review, and bookmark the best dishes around them. Built with the MERN stack.
 
 ## 🌐 Live Demo
-- **Frontend:** https://truffle-ns59.vercel.app
+- **Frontend:** https://truffle-ns59.vercel.app/login
 - **Backend API:** https://truffle-api-qh36.onrender.com
 
 ## ✨ Features
