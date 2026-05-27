@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 import RestaurantCard from '../components/RestaurantCard';
 import axios from '../utils/axios';
 
-const CUISINES = ['All', 'Biryani', 'Haleem', 'Waffles', 'Desserts', 'Chinese', 'Pizza'];
+const CUISINES = ['All', 'Biryani', 'Desserts', 'Chinese', 'Pizza','Burger'];
 
 const Home = () => {
   const [restaurants, setRestaurants] = useState([]);
@@ -44,7 +44,7 @@ const Home = () => {
         <p style={styles.heroSubtitle}>Real reviews from real food lovers in Hyderabad</p>
         <input
           type="text"
-          placeholder="🔍 Search restaurants or dishes..."
+          placeholder="🔍 Search restaurants "
           value={search}
           onChange={e => { setSearch(e.target.value); setPage(1); }}
           style={styles.searchBar}
