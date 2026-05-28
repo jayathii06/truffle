@@ -41,7 +41,7 @@ const Home = () => {
 
       <div style={styles.hero}>
         <h1 style={styles.heroTitle}>Discover the best<br /><span style={styles.highlight}>food around you</span></h1>
-        <p style={styles.heroSubtitle}>Real reviews from real food lovers in Hyderabad</p>
+        <p style={styles.heroSubtitle}>Real reviews from real food lovers near You</p>
         <input
           type="text"
           placeholder="🔍 Search restaurants "
