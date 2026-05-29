@@ -35,7 +35,7 @@ A full-stack community platform where users discover, review, and bookmark the b
 - Multer + Cloudinary for image uploads
 - REST API with 15+ endpoints
 
-## 📁 Project Structure
+##  Project Structure
 \`\`\`
 truffle/
 ├── frontend/          # React app
@@ -59,5 +59,5 @@ truffle/
 - **Review** — rating, comment, dish, user
 
 
-## 👤 Author
+##  Author
 Jayathi Sree — [GitHub](https://github.com/jayathii06)
