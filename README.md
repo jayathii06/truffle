@@ -1,12 +1,12 @@
-# 🍽️ Truffle — Hyperlocal Food Discovery Platform
+#  Truffle — Hyperlocal Food Discovery Platform
 
 A full-stack community platform where users discover, review, and bookmark the best dishes around them. Built with the MERN stack.
 
-## 🌐 Live Demo
+##  Live Demo
 - **Frontend:** https://truffle-ns59.vercel.app/login
 - **Backend API:** https://truffle-api-qh36.onrender.com
 
-## ✨ Features
+##  Features
 - JWT Authentication (Register/Login)
 - Add restaurants and dishes with photo uploads
 - Dish-level reviews with star ratings
@@ -18,7 +18,7 @@ A full-stack community platform where users discover, review, and bookmark the b
 - User profile with review history
 - Mobile responsive design
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### Frontend
 - React.js
@@ -52,7 +52,7 @@ truffle/
     └── routes/        # API routes
 \`\`\`
 
-## 🗄️ Database Schema
+##  Database Schema
 - **User** — name, email, password (hashed), avatar, bio, bookmarks[]
 - **Restaurant** — name, description, cuisine, area, city, image, createdBy
 - **Dish** — name, ingredients, flavor, weight, price, image, restaurant, createdBy
