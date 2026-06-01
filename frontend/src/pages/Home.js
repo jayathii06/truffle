@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 import RestaurantCard from '../components/RestaurantCard';
 import axios from '../utils/axios';
 
-const CUISINES = ['All', 'Biryani', 'Desserts', 'Chinese', 'Pizza','Burger'];
+const CUISINES = ['All', 'Biryani', 'Desserts', 'Chinese', 'Pizza','Burger','Waffles','Cafe'];
 
 const Home = () => {
   const [restaurants, setRestaurants] = useState([]);
