@@ -29,7 +29,6 @@ button {
   outline: none;
 }
 
-/* FIX: added background here so it can't be overridden */
 input, textarea {
   outline: none;
   border: none;
@@ -37,7 +36,6 @@ input, textarea {
   background: var(--bg) !important;
 }
 
-/* FIX: autofill override — Chrome ignores everything else on autocomplete */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus {
