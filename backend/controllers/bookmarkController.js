@@ -1,4 +1,4 @@
-const User = require('../models/User');
+const User =require('../models/User');
 
 const toggleBookmark = async (req, res) => {
   try {
