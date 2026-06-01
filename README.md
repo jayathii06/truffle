@@ -1,4 +1,4 @@
-#  Truffle — Hyperlocal Food Discovery Platform
+# Truffle — Hyperlocal Food Discovery Platform
 
 A full-stack community platform where users discover, review, and bookmark the best dishes around them. Built with the MERN stack.
 
