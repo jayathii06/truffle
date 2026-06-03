@@ -5,7 +5,7 @@ A full-stack community platform where users discover, review, and bookmark the b
 ##  Live Demo
 - **Frontend:** https://truffle-ns59.vercel.app/login
 - **Backend API:** https://truffle-api-qh36.onrender.com
-
+- 
 ##  Features
 - JWT Authentication (Register/Login)
 - Add restaurants and dishes with photo uploads
